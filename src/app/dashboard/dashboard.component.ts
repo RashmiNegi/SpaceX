@@ -29,7 +29,6 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.message = '';
     let querydata = this.route.snapshot.queryParams;
 
     if (querydata['launch_year'] != null) {
