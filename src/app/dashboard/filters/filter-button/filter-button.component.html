@@ -1,0 +1,11 @@
+<div class="row">
+  <ng-container *ngFor="let filter of filterData; let i = index">
+    <div class="col-sm-6 text-center mb-2" style="width:50%">
+      <a class="btn btn-custom btn-width" (click)="selectFilter(filter)"
+        [ngClass]="{ 'btn-select': selectedFilterValue === filter }">
+        {{ filter }}
+      </a>
+    </div>
+    <!-- <div class="w-100 mb-2" *ngIf="(i + 1) % 2 === 0"></div> -->
+  </ng-container>
+</div>

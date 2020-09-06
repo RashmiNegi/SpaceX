@@ -1,0 +1,9 @@
+<app-menu-bar></app-menu-bar>
+<div class="row">
+  <div class="col-sm-3">
+    <app-filters (selectedFilterValue)="selectedFilterValue($event)" [filterData]="filterData"></app-filters>
+  </div>
+  <div class="col-sm-9">
+    <app-programs [programData]="programData"></app-programs>
+  </div>
+</div>

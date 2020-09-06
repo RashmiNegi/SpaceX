@@ -1,0 +1,15 @@
+<div class="row">
+  <!-- <div class="card-group"> -->
+  <ng-container *ngFor="let data of programData; let i = index">
+    <div class="col-md-3 mb-3">
+      <app-program-details [data]="data"></app-program-details>
+    </div>
+    <div class="w-100" *ngIf="(i + 1) % 4 === 0"></div>
+  </ng-container>
+  <ng-container *ngIf="programData.length == 0">
+    <div class="card w-100 text-center noData">
+        <span>No Data Found!!</span>
+      </div>
+  </ng-container>
+  <!-- </div> -->
+</div>
